@@ -12,5 +12,6 @@
     "lib": ["ES5", "DOM"], // Include relevant libraries
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true // Speeds up compilation and avoids type checking in declaration files
-  }
+  },
+  "exclude": ["tests"]
 }

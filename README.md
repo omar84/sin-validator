@@ -14,6 +14,8 @@ A simple interactive web application for validating Canadian Social Insurance Nu
 
 - **TypeScript**: For static typing and modern JavaScript features.
 - **Tailwind CSS**: For utility-first styling of the web application.
+- **Vite**: For compiling and bundling typescript to ES5 javascript.
+- **Jest**: For unit testing.
 - **Prettier**: For consistent code formatting.
 - **VSCode**: VScode is the preferred code editor for this project.
 
@@ -56,7 +58,15 @@ Open a new terminal window, and run:
 yarn dev
 ```
 
-This will open the web app in a new browser window, and it will automatically reload whenever changes are made to `index.html` or `dist/*`
+This will open the web app in a new browser window, and it will automatically reload the web app whenever changes are made to the files in `dist` directory
+
+### Testing
+
+Run tests to make sure your app still runs as intended after making changes
+
+```bash
+yarn test
+```
 
 ### Build and deploy the app
 
@@ -66,11 +76,11 @@ Compile typescript to javascript
 yarn build
 ```
 
-Copy your static files to your production server:
+Copy your static files inside `dist` directory, to your production server
 
-```bash
+```
 index.html
-dist/*
+app.js
 ```
 
 and that's it!

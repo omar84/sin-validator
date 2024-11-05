@@ -3,18 +3,23 @@
   "description": "A simple interactive SIN validator web app",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "dev": "browser-sync start --server --files 'dist/*, index.html'",
-    "format": "prettier --write 'src/**/*.{js,ts,html}'"
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "dev": "vite",
+    "format": "prettier --write 'src/**/*.{js,ts,html}'",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Omar Khashab",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.3",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.3"
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
   },
   "engines": {
     "node": ">=18.x"
