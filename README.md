@@ -56,7 +56,7 @@ Open a new terminal window, and run:
 yarn dev
 ```
 
-This will reload whenever changes are made to `index.html` or `dist/*`
+This will open the web app in a new browser window, and it will automatically reload whenever changes are made to `index.html` or `dist/*`
 
 ### Build and deploy the app
 
