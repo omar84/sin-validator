@@ -1,4 +1,4 @@
-import { validateSIN } from '../src/helper'; // Adjust the import path based on your file structure
+import { validateSIN } from '../../src/lib';
 
 describe('validateSIN', () => {
   const testCases = [

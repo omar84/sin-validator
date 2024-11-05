@@ -1,29 +1,3 @@
-export const sinInput = document.getElementById('sin-input') as HTMLInputElement;
-export const messageEl = document.getElementById('validation-message') as HTMLParagraphElement;
-
-// Extract functionality that deal with dom manipulation to spearate functions
-
-/**
- * Displays a default message for the user.
- * @returns {void}
- */
-export function showDefaultMessage(): void {
-  messageEl.textContent = 'Please enter a 9-digit number.';
-  messageEl.style.color = 'gray';
-}
-
-/**
- * Displays a validation message indicating whether the SIN is valid or invalid.
- * Aslo, colors the message appropriately.
- * @param {boolean} isValid - Indicates if the SIN is valid (true) or invalid (false).
- * @returns {void}
- */
-export function showValidationMessage(isValid: boolean): void {
-  messageEl.textContent = isValid ? '✅ Valid SIN' : '❌ Invalid SIN';
-  messageEl.style.color = isValid ? 'green' : 'red';
-  messageEl.style.transition = 'all 0.3s';
-}
-
 /**
  * Validates a SIN (Social Insurance Number) using the Luhn algorithm.
  * @param {string} input - The SIN number as a string of digits.
