@@ -44,6 +44,12 @@ yarn
 
 ### Development
 
+To quickly get a fresh start, run:
+
+```bash
+yarn util:fresh
+```
+
 Open a new terminal window, and run:
 
 ```bash

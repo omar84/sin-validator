@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import postcss from './postcss.config.js';
 
 export default defineConfig({
   root: './src',
@@ -15,5 +16,8 @@ export default defineConfig({
   server: {
     open: true, // Automatically open the app in the browser
     hmr: true, // Enable Hot Module Replacement
+  },
+  css: {
+    postcss,
   },
 });
