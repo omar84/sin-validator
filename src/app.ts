@@ -25,7 +25,6 @@ function validateSIN(input: string): boolean {
   return sum % 10 === 0;
 }
 
-
 showDefaultMessage();
 
 sinInput.addEventListener('input', function () {
