@@ -3,8 +3,8 @@
   "description": "A simple interactive SIN validator web app",
   "version": "1.0.0",
   "scripts": {
-    "build": "vite build",
-    "build:watch": "vite build --watch",
+    "build": "vite build --emptyOutDir",
+    "build:watch": "vite build --emptyOutDir --watch",
     "dev": "vite",
     "format": "prettier --write 'src/**/*.{js,ts,html}'",
     "test": "jest",
