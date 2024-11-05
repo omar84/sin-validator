@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // For compatibility with older browsers
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node", // 'node' for compatibility with Node and browser environments
+    "downlevelIteration": true, // Ensures better compatibility with older environments for iterable structures
+    "sourceMap": true, // Helpful for debugging
+    "lib": ["ES5", "DOM"], // Include relevant libraries
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true // Speeds up compilation and avoids type checking in declaration files
+  }
+}

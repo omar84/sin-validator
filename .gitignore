@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Output directory for TypeScript
+dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db

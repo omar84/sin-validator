@@ -1,0 +1,20 @@
+{
+  "name": "sin-validator",
+  "description": "A simple interactive SIN validator web app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "browser-sync start --server --files 'dist/*, index.html'"
+  },
+  "keywords": [],
+  "author": "Omar Khashab",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
