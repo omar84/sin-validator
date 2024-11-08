@@ -1,4 +1,4 @@
-import { validateSIN } from '../../src/lib';
+import { validateSIN } from '../../../src/lib/sin-validator';
 
 describe('validateSIN', () => {
   const testCases = [

@@ -52,6 +52,17 @@ yarn
 
 ### Development
 
+The code is organized into a clear structure to separate concerns and maintain scalability as the app grows:
+
+```
+src/
+├── lib/            # Contains core logic, such as SIN validation (independent of the DOM)
+├── styles/         # Tailwind CSS and any other custom styles
+├── ui/             # UI and DOM-related functionality, including message display and user interactions
+├── app.ts          # Main application logic and initialization
+└── index.html      # HTML entry point for the web app
+```
+
 To quickly get a fresh start, run:
 
 ```bash
@@ -87,7 +98,7 @@ All the tests are under the `tests` directory
 ```
 tests/
 ├── integration/
-├── unit/
+└── unit/
 ```
 
 ### Build and deploy the app

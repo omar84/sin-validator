@@ -10,7 +10,7 @@ import {
   MESSAGE_VALID_COLOR,
   showDefaultMessage,
   showValidationMessage,
-} from '../../src/dom-helper';
+} from '../../../src/ui/sin-validator';
 
 let elements: ReturnType<typeof getDomElements>;
 

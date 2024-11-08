@@ -1,4 +1,4 @@
-import { validateSIN } from './lib';
+import { validateSIN } from '../lib/sin-validator';
 
 export const MESSAGE_DEFAULT = 'Please enter a 9-digit number.';
 export const MESSAGE_VALID = '✅ Valid SIN';

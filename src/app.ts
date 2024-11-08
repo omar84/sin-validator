@@ -1,4 +1,4 @@
 import './styles/tailwind.css';
-import { initSinValidator } from './dom-helper';
+import { initSinValidator } from './ui/sin-validator';
 
 initSinValidator();
