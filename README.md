@@ -15,9 +15,17 @@ A simple interactive web application for validating Canadian Social Insurance Nu
 - **TypeScript**: For static typing and modern JavaScript features.
 - **Tailwind CSS**: For utility-first styling of the web application.
 - **Vite**: For compiling and bundling typescript to ES5 javascript.
-- **Jest**: For unit testing.
+- **Jest**: For unit and integration testing.
 - **Prettier**: For consistent code formatting.
 - **VSCode**: VScode is the preferred code editor for this project.
+
+## Future work
+
+If our code base gets bigger and more complicated, we can:
+
+- Adding ESLint for code quality checks.
+- Integrating a backend, such as Express or Next.js, if database storage is required.
+- Migrating to React for advanced state management if needed.
 
 ## Getting Started
 
@@ -85,19 +93,17 @@ yarn build
 Copy your static files inside `dist` directory, to your production server
 
 ```
-index.html
-app.js
+dist/
+├── assets/
+├── app.js
+└── index.html
 ```
 
 and that's it!
 
 ## Tailwind CSS
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-### How Tailwind is Used
-
-Tailwind CSS is loaded as a minified CDN version, so there’s no need to compile or build Tailwind CSS separately. This approach keeps the project simple and lightweight, ideal for smaller apps that don’t require custom configurations.
+This project uses [Tailwind CSS](https://tailwindcss.com/) for styling, configured to only include necessary CSS to keep the bundle small.
 
 ### Customization
 
@@ -106,5 +112,3 @@ To add custom styling with Tailwind, use Tailwind utility classes directly in th
 ```html
 <input class="border border-gray-300 p-4 text-2xl w-full" />
 ```
-
-If you need additional Tailwind customizations in the future, you can switch to a local Tailwind build and configure it via a tailwind.config.js file. However, for this project, we’re focusing on using the CDN version to keep things simple.
