@@ -82,6 +82,14 @@ Run tests to make sure your app still runs as intended after making changes
 yarn test
 ```
 
+All the tests are under the `tests` directory
+
+```
+tests/
+├── integration/
+├── unit/
+```
+
 ### Build and deploy the app
 
 Compile typescript to javascript
