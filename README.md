@@ -21,7 +21,7 @@ A simple interactive web application for validating Canadian Social Insurance Nu
 
 ## Future work
 
-If our code base gets bigger and more complicated, we can:
+If our code base gets bigger and more complicated, we can consider:
 
 - Adding ESLint for code quality checks.
 - Integrating a backend, such as Express or Next.js, if database storage is required.
